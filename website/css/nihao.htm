@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body{height:100%;margin:0;padding:0;}
+		body{overflow:hidden;}
+		.square{
+			margin:100px;
+			width:160px;
+			height:40px;
+			background:red;
+			position:relative;
+			border-radius:40px;
+		}
+		.square1{
+			/*transparent*/
+			border-top:32px solid transparent;
+			border-bottom:32px solid transparent;
+			border-left:32px solid transparent;
+			border-right:32px solid #fff;
+			width:0px;
+			transform:rotate(45deg);
+			position:absolute;
+			bottom:18px;
+			left:-32px;
+			}
+		.square2{
+			/*transparent*/
+			border-top:32px solid transparent;
+			border-bottom:32px solid #fff;
+			border-left:32px solid transparent;
+			border-right:32px solid transparent;
+			width:0px;
+			transform:rotate(135deg);
+			position:absolute;
+			top:18px;
+			right:-32px;
+			}
+		
+	</style>
+</head>
+<body>
+<div class="square">
+	<div class="square1"></div>
+	<div class="square2"></div>
+</div>
+</body>
+</html>

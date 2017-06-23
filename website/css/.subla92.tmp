@@ -1,0 +1,475 @@
+	
+
+	html,body{width:100%;height:100%;margin:0;padding:0;}
+		ul,li,p,ol{
+			margin:0;
+			padding:0;
+			font-family:"微软雅黑";
+			font-size:0px;
+		}
+		body{
+			overflow-x:hidden;
+		}
+		li{
+			list-style:none;
+		}
+		a{
+			text-decoration:none;
+		}
+		#Home{
+			width:100%;
+			
+			transition:2s;
+			position:absolute;
+			left:0;
+			background:pink;
+		}
+		#homeOne{
+			width:960px;
+			/*background:lime;*/
+			margin:0 auto;
+		}
+		.home1{
+			width:100%;
+			height:100px;
+
+		}
+		.home1_1{
+			width:120px;
+			height:75px;
+			background:red;
+		}
+		.home2{
+			width:100%;
+			height:40px;
+		}
+		.home3{
+			height:340px;
+			border-radius:10px;
+			border:2px solid #fed;
+			padding:10px;
+
+		}
+		.home3_1{
+			width:670px;
+			height:340px;
+			
+			border-radius:10px;
+			border:1px solid #f34;
+			float:left;
+		}
+		.home3_2{
+			width:260px;
+			height:340px;
+			float:right;
+		}	
+		.home3_2_1{
+			width:120px;
+			height:80px;
+			background-color:lime;
+			float:left;
+			margin-left:10px;
+			margin-bottom:7px;
+		}
+		.home4{
+			width:100%;
+			height:85px;
+			background:lime;
+			box-shadow:1px 1px 10px #888;
+			margin-top:30px;
+		}
+		.home4_1,.home4_3{
+			width:42px;
+			height:85px;
+			float:left;
+			background:#2d7cc8;
+			
+		}
+		.home4_2{
+			width:876px;
+			height:85px;
+			float:left;
+			background:#2d7cc8;
+			overflow:hidden;
+
+		}
+		.home4_2 img{
+			width:65px;
+			height:67px;
+			margin-right:4px;
+			margin-top:2px;
+		}
+		.home4_2 table{
+			transition:1s;
+		}
+		.home5{
+			width:100%;
+			margin-top:-1px;
+			
+		}
+		.home5_1,.home5_2,.home5_3{
+			width:948px;
+			
+			background:#fff;
+			border-left:1px solid #2d7cc8;
+			border-right:1px solid #2d7cc8;
+			margin:0 auto;
+		}
+		.home5_1{
+			height:30px;
+		}
+		.home5_2{
+			height:28px;
+			border-top:1px dashed #2d7cc8;
+			border-bottom:1px dashed #2d7cc8;
+		}
+		.home5_3{
+			
+			height:29px;
+			border-bottom:1px solid #2d7cc8;
+		}
+		.home6{
+			margin-top:30px;
+			width:100%;
+			height:450px;
+			background:#231243;
+		}
+		.home6_1{
+			width:650px;
+			height:435px;
+			background:#fff;
+			border-radius:10px;
+			float:left;
+		}
+		.home6_1_1{
+			width:100%;
+			height:42px;
+			position:relative;
+		}
+		.home6_1_1>span{
+			font-size:14px;
+		}
+		.home6_2{
+			width:287px;
+			height:435px;
+			background:lime;
+			float:right;
+			border-radius:10px;
+		}
+		.square{
+			top:1px;
+			left:40px;
+			width:160px;
+			line-height:40px;
+			background:#2d7cc8;
+			position:relative;
+			border-radius:30px;
+			border-top:1px solid blue;
+		}
+		.square>p{
+			font-size:20px;
+			text-align:center;
+			color:#fff;
+		}
+		.square1{
+			/*transparent*/
+			border-top:32px solid transparent;
+			border-bottom:32px solid transparent;
+			border-left:32px solid transparent;
+			border-right:32px solid #fff;
+			width:0px;
+			transform:rotate(45deg);
+			position:absolute;
+			bottom:10px;
+			left:-32px;
+			}
+		.square2{
+			/*transparent    透明*/
+			border-top:32px solid transparent;
+			border-bottom:32px solid #fff;
+			border-left:32px solid transparent;
+			border-right:32px solid transparent;
+			width:0px;
+			transform:rotate(135deg);
+			position:absolute;
+			top:13px;
+			right:-32px;
+			}	
+			.home6_1_2{
+				width:460px;
+				height:42px;
+				background:red;
+				position:absolute;
+				top:0;right:0;
+			}
+		
+			
+
+
+
+			
+		
+
+			
+			
+
+			
+			
+
+		
+
+		/*动漫*/
+		#Anime{
+			width:100%;
+			opacity:0;
+			transition:1.5s;
+			position:absolute;
+			left:100%;
+			
+			
+			
+		}
+		#boxOne,#boxTwo{
+			width:100%;
+			height:950px;
+			display:flex;
+			justify-content:center;
+
+		}
+		#backImage1,#backImage2{
+			width:100%;
+			height:950px;
+			opacity:0.4;
+			position:absolute;
+			z-index:-1000;
+		}
+		#backImage1{
+			background:url(../photo/photo1.jpg);
+		}
+		#backImage2{
+			position:absolute;
+			background:url(../photo/mantu/1.jpg);
+			top:950px;
+		}
+			
+			
+		#divOne,#divSeven{
+			width:1250px;
+			
+		}
+		.div2{
+			width:100%;
+			line-height:40px;
+			font-size:30px;
+			color:black;
+			text-align:center;
+		}
+		.div3{
+			width:100%;
+			height:30px;
+			margin-top:10px;
+			text-align:center;
+			color:blue;
+		}
+			
+			
+			
+			
+		.span1{
+			padding:14px;
+			font-size:26px;
+			
+			margin-right:80px;
+		}
+		.div4{
+			width:100%;
+			height:300px;
+			margin-top:120px;
+		}
+		.div4_1,.div4_2{
+			width:625px;height:300px;
+			float:left;
+			overflow:hidden;
+
+		}
+		.div4_1_1{
+			width:100%;
+			height:100%;
+			background-color:lime;
+			position:relative;
+			left:0;
+			background:url(../photo/mantu/1.jpg)no-repeat;
+			background-size:100% 100%;
+		}
+		.div4_1_2{
+			width:100%;
+			height:100%;
+			background-color:blue;
+			position:relative;
+			left:-100%;
+			top:-100%;
+			background:url(../photo/mantu/1.jpg)no-repeat;
+			background-size:100% 100%;
+		}
+		.div4_2_1{
+			width:100%;
+			height:100%;
+			
+			position:relative;
+			left:0;
+			background:url(../photo/mantu/1.jpg)no-repeat;
+			background-size:100% 100%;
+			transition:2s;
+		}
+		.div4_2_2{
+			width:100%;
+			height:100%;
+			position:relative;
+			background-color:red;
+			left:100%;top:-100%;
+			background:url(../photo/mantu/2.jpg)no-repeat;
+			background-size:100% 100%;
+			transition:1.5s;
+		}
+		.div5{
+			width:calc(100% - 2px);
+			height:310px;
+			border:1px solid #f34;
+			margin-top:10px;
+		}
+		.div5_1,.div5_2,.div5_3,.div5_4{
+			width:300px;
+			height:300px;
+			border:1px solid #f34;
+			float:left;
+			margin:5px;
+			background:red;
+		}
+		.div6{
+			width:calc(100% - 2px);
+			height:98px;
+			margin-top:16px;
+			border:1px solid #f45;
+		}
+
+		.div8{
+			width:840px;
+			border:1px solid #f56;
+			float:left;
+		}
+		.div8_1,.p2{
+			width:100%;
+			height:48px;
+			background:gray;
+			display:flex;
+			align-items:center;
+		}
+		.li1{
+			width:260px;
+			height:200px;
+			/*opacity:0.6;*/
+			float:left;
+			margin:10px;
+		}
+		.div8_2{
+			width:54%;
+			height:100%;
+			background:red;
+			float:left;
+			background:url(../photo/photo10.jpg);
+			background-size:100% 100%;	
+			opacity:1;
+		}
+		.div8_3{
+			width:46%;
+			height:100%;
+			float:right;
+		}
+		.div8_3  a{
+			width:100%;
+			font-size:18px;
+			text-decoration:none;
+			overflow:hidden;
+			white-space:nowrap;    /*强制不换行*/
+			text-overflow:ellipsis;
+			color:black;
+			display:block;
+		}
+		.div8_3 p{
+			width:100%;
+			font-size:14px;
+			color:#f34;
+		}
+			
+			
+		.div8_3 p:nth-of-type(5){
+			height:90px;
+			word-break:break-all;
+			
+			overflow: auto;
+			font-size:14px;
+		}
+		.button1,.button2{
+			padding:2px;
+			padding-right:10px;
+			margin:2px;
+			margin-left:10px;
+			border-radius:2px;
+		}	
+		.div9{
+			width:380px;
+			border:1px solid #f98;
+			float:right;
+		}
+		.span2{
+			font-size:20px;
+			margin-right:28px;
+		}
+		.div9_2{
+			width:calc(100% - 2px);
+			border:1px solid #f98;
+		
+		}
+		.li2{
+			width:100%;
+			line-height:28px;
+			
+			font-size:16px;
+			color:black;
+		}
+		.span3{
+			float:right;
+		}
+		.li2 a:hover{
+			text-decoration:underline;
+		}
+		.But{
+			width:100%;
+			height:100px;
+			background:pink;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+			
+		.butone{
+			width:1250px;
+			height:80%;
+			border-top:1px solid black;
+			border-bottom:1px solid black;
+			position:relative;
+		}
+		.butone>p,.li3{
+			font-size:20px;
+		}
+		.li3{
+			float:left;
+			margin-right:20px;
+			font-size:16px;
+		}
+		.butone>.pp{
+			position:absolute;
+			bottom:0;right:0;
+			font-size:10px;
+			color:gray;
+		}	
