@@ -2,88 +2,19 @@
 
 
 		// 首页中的图片变换  JS原型
-		var Sj=1;
+			var Sj=1;
 			setInterval(function(){
-				// console.log(Sj)
 				$(".home3_1>a").eq(Sj).css('display','none');
 				$(".home3_2_1>a").eq(Sj).css('opacity','0.5');
 				Sj=Math.round(Math.random()*7);
 				$(".home3_1>a").eq(Sj).css('display','block');
 				$(".home3_2_1>a").eq(Sj).css('opacity','1');
-				// console.log(Sj)
 
 			},3000)
-		
-		//面向对象
 			window.onload=function(){
-
-				// var T1=new Abc1();
-				// T1.fn1();
 				var T2=new Abc2();
 				T2.fn3();
 			}
-			// function Abc1(){
-			// 	this.ohome3_1=document.querySelector(".home3_1");
-			// 	this.aA1000=this.ohome3_1.querySelectorAll("a");
-			// 	this.ohome3_2_1=document.querySelectorAll(".home3_2_1");
-			// 	this.bb=0;
-			// }
-			// Abc1.prototype.fn1=function(){
-			// 	var This=this;
-			// 	for(var i=0;i<this.aA1000.length;i++){
-			// 		this.ohome3_2_1[i].index=i;
-			// 		this.ohome3_2_1[i].onmouseover=function(){
-			// 			This.fn2(this);
-			// 		}
-			// 	}
-			// }
-			// Abc1.prototype.fn2=function(obj){
-			// 	this.aA1000[this.bb].style.display="none";
-			// 	this.aA1000[obj.index].style.display="block";
-			// 	this.bb=obj.index;
-			// }
-			
-			
-		
-		
-		// 首页中的不间断播放  JS原型
-		// var ohome4_1=document.querySelector(".home4_1");
-		// var ohome4_2=document.querySelector(".home4_2");
-		// var ohome4_3=document.querySelector(".home4_3");
-		// var omarquePic1=document.querySelector("#marquePic1");
-		// var omarquePic2=document.querySelector("#marquePic2");
-		// omarquePic2.innerHTML=omarquePic1.innerHTML;
-		// var time1=null,time2=null;
-		// ohome4_1.onclick=function(){
-		// 	clearInterval(time2);
-		// 	time1=setInterval(function(){
-		// 		// console.log(ohome4_2.scrollLeft)
-		// 		// console.log(omarquePic1.scrollWidth)
-		// 		if(ohome4_2.scrollLeft>=omarquePic1.scrollWidth)
-		// 		{
-		// 			ohome4_2.scrollLeft=0;
-		// 		}
-		// 		else
-		// 		{
-		// 			ohome4_2.scrollLeft++;
-		// 		}
-		//  	},50)
-		// }
-		// ohome4_3.onclick=function(){
-		// 	clearInterval(time1);
-		// 	time2=setInterval(function(){
-		// 		if(ohome4_2.scrollLeft<=0)
-		// 		{
-		// 			ohome4_2.scrollLeft=omarquePic1.scrollWidth;
-		// 		}
-		// 		else{
-		// 			ohome4_2.scrollLeft--;
-		// 		 	// console.log(ohome4_2.scrollLeft)
-		// 		}
-		// 	},50);
-		// }
-		
-		//面向对象
 		function Abc2(){
 			this.ohome4_1=document.querySelector(".home4_1");
 			this.ohome4_2=document.querySelector(".home4_2");
@@ -99,12 +30,10 @@
 			this.ohome4_1.onclick=function(){
 				This.fn4();
 			}
-			this.ohome4_3.onclick=function(){
-				
+			this.ohome4_3.onclick=function(){	
 				This.fn5();
 			}
-		}
-				
+		}		
 		Abc2.prototype.fn4=function(){
 			var This=this;
 			clearInterval(this.time2);
@@ -115,8 +44,7 @@
 		}
 				
 		Abc2.prototype.fn4_1=function(){
-			// console.log(this.ohome4_2.scrollLeft)
-			// console.log(this.omarquePic1.scrollWidth)
+			
 			if(this.ohome4_2.scrollLeft>=this.omarquePic1.scrollWidth)
 			{
 				this.ohome4_2.scrollLeft=0;
@@ -142,22 +70,12 @@
 			}
 			else{
 				this.ohome4_2.scrollLeft--;
-			 	// console.log(this.ohome4_2.scrollLeft)
 			}
 		}	
-	
-		 
-		//var scroll=document.body.scrollHeight
-	
-		
-
-
 		//图片切换
 		var oDiv4_1_1=document.querySelector(".div4_1_1");
 		var aImg2=oDiv4_1_1.querySelectorAll("img");
-
-		var oDiv4_2_1=document.querySelector(".div4_2_1");
-		
+		var oDiv4_2_1=document.querySelector(".div4_2_1");		
 		// console.log(oDiv4_2_1.offsetWidth)
 		var aImg3 = oDiv4_2_1.querySelectorAll("img");	
 		setInterval(function(){
@@ -166,7 +84,6 @@
 			{
 				aImg2[i].style.display="block";
 				aImg2[i].style.left=parseInt(getStyle(aImg2[i]))-265+'px';
-
 				if(parseInt(getStyle(aImg2[i]))<(-397))
 				{	
 							aImg2[i].style.display="none";
@@ -178,18 +95,12 @@
 					aImg3[i].style.display="block";
 					aImg3[i].style.left=parseInt(getStyle(aImg3[i]))+265+'px';
 					if(parseInt(getStyle(aImg3[i]))>397)
-					{
-						
+					{						
 							aImg3[i].style.display="none";
 							aImg3[i].style.left=-265*6+"px";
 					}
 			}
 		},6000);
-					
-						
-					
-							
-						
 		function getStyle(obj)
 		{
 			return  obj.currentStyle?obj.currentStyle.left:getComputedStyle(obj).left;
@@ -205,43 +116,31 @@
 			var aSpan1=$(".span1");
 
 			//页面切换
-			aSpan1.eq(0).click(function(){
-			
+			aSpan1.eq(0).click(function(){			
 				$("#Home").css('display','block');
 				$("#Anime").css('display','none');
-				$("#Photo").css('display','none')
-				$("#Culture").css('display','none')
-			})
+				$("#Photo").css('display','none');
+				$("#Culture").css('display','none');
+			});
 			aSpan1.eq(1).click(function(){
-				
 				$("#Home").css('display','none');
 				$("#Anime").css('display','block');
-				$("#Photo").css('display','none')
+				$("#Photo").css('display','none');
 				$("#Culture").css('display','none');
-			})
+			});
 			aSpan1.eq(2).click(function(){
-				
 				$("#Home").css('display','none');
 				$("#Anime").css('display','none');
-				$("#Photo").css('display','block')
+				$("#Photo").css('display','block');
 				$("#Culture").css('display','none');
 
-
-
-		
-			})
+			});
 			aSpan1.eq(3).click(function(){
-				
 				$("#Home").css('display','none');
 				$("#Anime").css('display','none');
-				$("#Photo").css('display','none')
+				$("#Photo").css('display','none');
 				$("#Culture").css('display','block');
-
-
-
-
-			})
-			
+			});
 			$('.span1').click(function(){
 				$(this).eq(0).css({'backgroundColor':''});
 				$(this).css({'backgroundColor':'#4894B3'}).siblings().css({'backgroundColor':''});
@@ -251,35 +150,25 @@
 				
 				// 图片获取及加载
 					var start=0;
-					var step=30;
+					var step=60;
 					var oPhoto1=document.querySelector(".Photo1");
 					var H_soll=null;
 					function fn1(data){
 						for(var i=0;i<data.list.length;i++)
 						{
-
+							// console.log(data)
 							var aDiv123=document.createElement("div");
 							aDiv123.className="Photo1_1";
-
-							// console.log(oPhoto2_1_value)
-							var aImg123=document.createElement("img");
-							// console.log(data.list[i])
+							var aImg123=document.createElement("img");			
 							aImg123.className="Photo1_1_1";
-							// aImg123.src=data.list[i]._thumb;
-							//aImg123.src=data.list[i].img;
-							//	// aImg123.src=data.list[i]._thumb_bak;		
-							// aImg123.src=data.list[i].thumb;	
-							 aImg123.src=data.list[i].thumb_bak;
+							// _thumb
+							 aImg123.src=data.list[i].thumb;
 							aDiv123.appendChild(aImg123);
 							var aP123=document.createElement("p");
 							aP123.className="Photo1_1_1_1";
 							aP123.innerHTML=data.list[i].title;
-							aDiv123.appendChild(aP123);
-							
+							aDiv123.appendChild(aP123);	
 							oPhoto1.appendChild(aDiv123);
-							// console.log(data.list[i].title)
-							
-						// console.log(data)
 						}
 					}
 							
@@ -300,45 +189,25 @@
 					})
 					setInterval(function(){
 						var scroll=document.body.scrollTop;
-						if(scroll>0){
-							$(".Photo2").css('display','none');
-							$(".naw").css('display','none');
-						}
-						else{
-							$(".Photo2").css('display','block');
-							$(".naw").css('display','block');
-						}
 						//console.log(document.body.scrollHeight-document.body.clientHeight+"\n"+window.scrollMaxY)  //滚动条的长度
-						 console.log(scroll==H_soll)
 						H_soll=document.body.scrollHeight-document.body.clientHeight;
-						// console.log(document.body.clientHeight)
-						// console.log(document.body.scrollHeight)
-						// console.log(window.innerHeight)
-						// console.log(window.screen.height)
-						if(scroll==H_soll){
-							start+=step;
-							var oScript=document.createElement("script");
-							oScript.src="http://image.so.com/j?src=360pic_strong&z=2&cmg=2f52849d495bb60742a8b46444e77bf8&q="+oPhoto2_1_value+"&correct="+oPhoto2_1_value+"&sn="+start+"&pn="+step+"&sid=553ab22c6a3cd0840c0785f3e3b7d582&ran=0&ras=0&callback=fn1";
-							document.body.appendChild(oScript);
+						if($("#Photo").css('display')=='block')
+						{
+							if(scroll==H_soll || scroll==document.body.scrollHeight-window.innerHeight){
+								start+=step;
+								var oScript=document.createElement("script");
+								oScript.src="http://image.so.com/j?src=360pic_strong&z=2&cmg=2f52849d495bb60742a8b46444e77bf8&q="+oPhoto2_1_value+"&correct="+oPhoto2_1_value+"&sn="+start+"&pn="+step+"&sid=553ab22c6a3cd0840c0785f3e3b7d582&ran=0&ras=0&callback=fn1";
+								document.body.appendChild(oScript);
+							}
 						}
-						// console.log(scroll)
-					},600)
+					},3000)
 					setInterval(function(){
-
 						var P_width=$(".Photo1").width();
 						var D_width=document.body.clientWidth;
 						window.onresize=function(){
-							// console.log(D_width)
-							$(".Photo1").width(D_width/1800*1800);
-							// alert(D_width/1480)
+							$(".Photo1").width(D_width);	
 						}
-						// console.log(P_width)
-					},50)
-				
-
-			
-
-			
+					},50);		
 		//总	
 		var  ohome6_2_2_1=document.getElementsByClassName("home6_2_2_1")[0];
 		var  ohome6_2_2_2=document.getElementsByClassName("home6_2_2_2")[0];
@@ -377,8 +246,6 @@
 		var aSpan=ohome6_2_3.getElementsByTagName("span");
 		var aFont1=document.getElementsByClassName("Font1");
 		var aFont2=document.getElementsByClassName("Font2");
-		
-
 		var arr1=["http://img1.v.tmcdn.net/img/h000/h73/img20170329141714439000.jpg",
 					"http://img1.v.tmcdn.net/img/h000/h73/img20170112162825847880.jpg",
 					"http://img1.v.tmcdn.net/img/h000/h73/img20160603132452433160.png",
@@ -506,9 +373,6 @@
 				}
 			});
 		})
-		
-
-		
 		//热门自动切换
 		
 		$(document).ready(function(){
@@ -655,59 +519,24 @@
 			 $(this).css('color',Corr[Math.round(Math.random()*11)]);
 		})
 
+
+		//导航条上下收缩
+		setInterval(function(){
+			if($('body').scrollTop()>0){
+				$('.naw').css("top","-120px");
+				$(".Photo2").css('top','-60px');
+			}else{
+				$(".naw").css("top","0");
+				$(".Photo2").css('top','120px');
+			}
+		},50);
+
+
 		
 		
 
 				
-			
-					var caution = false
-					function setCookie(name, value, expires, path, domain, secure) {
-					var curCookie = name + "=" + escape(value) +
-					((expires) ? "; expires=" + expires.toGMTString() : "") +
-					((path) ? "; path=" + path : "") +
-					((domain) ? "; domain=" + domain : "") +
-					((secure) ? "; secure" : "")
-					if (!caution || (name + "=" + escape(value)).length <= 4000)
-					document.cookie = curCookie
-					else
-					if (confirm("Cookie exceeds 4KB and will be cut!"))
-					document.cookie = curCookie
-					}
-					function getCookie(name) {
-					var prefix = name + "="
-					var cookieStartIndex = document.cookie.indexOf(prefix)
-					if (cookieStartIndex == -1)
-					return null
-					var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-					if (cookieEndIndex == -1)
-					cookieEndIndex = document.cookie.length
-					return (document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
-					}
-					function deleteCookie(name, path, domain) {
-					if (getCookie(name)) {
-					document.cookie = name + "=" +
-					((path) ? "; path=" + path : "") +
-					((domain) ? "; domain=" + domain : "") +
-					"; expires=Thu, 01-Jan-70 00:00:01 GMT"
-					}
-					}
-					function fixDate(date) {
-					var base = new Date(0)
-					var skew = base.getTime()
-					if (skew > 0)
-					date.setTime(date.getTime() - skew)
-					}
-					var now = new Date()
-					fixDate(now)
-					now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-					var visits = getCookie("counter")
-					if (!visits){visits = 1}
-
-					else
-					visits = parseInt(visits) + 1
-					setCookie("counter", visits, now)
-					document.write("您是第" + visits + "访问本专题的！")
-					alert("您是第" + visits + "访问本专题的！")
+		
 				
 
 		
